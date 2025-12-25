@@ -27,7 +27,7 @@ key_save_path = "keys"
 amd_compute_instance_count = 2
 
 # Optional: Whether to create arm instance
-arm_instance_enabled = false
+arm_instance_enabled = true
 
 # Optional: Backup retention days (1-7, free tier limitation)
 backup_retention_days = 1
