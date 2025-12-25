@@ -1,0 +1,33 @@
+# Example Terraform variables file
+# Copy this to terraform.tfvars and update the values
+
+# Required: Your tenancy OCID (found in OCI Console > Administration > Tenancy Details)
+tenancy_ocid = "<your_tenancy_ocid_here>"
+
+# Optional: Your user OCID (if not provided, will try to auto-detect from OCI CLI)
+user_ocid = "<your_user_ocid_here>"
+
+# Optional: Region (if not provided, will try to auto-detect from OCI CLI)
+region = "<your_region_here>"
+
+# Optional: Name of the compartment to create
+compartment_name = "OCI-Free-Compute-Maximal"
+
+# Optional: CIDR block for VCN (if not provided, will generate random one)
+# cidr_block = "192.168.100.0/24"
+
+# Optional: Your current public IP for SSH access (format: IP/CIDR)
+# This ensures only your IP can SSH into the instances
+#ssh_source_ip = "49.36.190.125/32"
+
+# Optional: Path to save generated SSH keys
+key_save_path = "keys"
+
+# Optional: Number of Ubuntu instances (0-2 for free tier)
+amd_compute_instance_count = 2
+
+# Optional: Whether to create arm instance
+arm_instance_enabled = false
+
+# Optional: Backup retention days (1-7, free tier limitation)
+backup_retention_days = 1
